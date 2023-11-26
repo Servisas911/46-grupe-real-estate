@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Estate</title>
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+    <link rel="manifest" href="./favicon/site.webmanifest">
+    <link rel="mask-icon" href="./favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/font-awesome.min.css">
+</head>
+
+<body>
+    <header class="main-header">
+        <img class="logo" src="./img/logo.png" alt="Logo">
+
+        <div class="main-header-right-side">
+            <nav class="main-menu">
+                <a class="menu-link" href="#">Buy</a>
+                <a class="menu-link" href="#">Rent</a>
+                <a class="menu-link" href="#">Agent</a>
+                <a class="menu-link" href="#"><span>About</span> our team</a>
+            </nav>
+
+            <img class="user-avatar" src="./img/user.png" alt="User avatar">
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1 class="main-title">We help you find your dream home.</h1>
+                <form class="form">
+                    <div class="filter">
+                        <button class="filter-btn active" type="button">Buy</button>
+                        <button class="filter-btn" type="button">Rent</button>
+                    </div>
+                    <div class="search">
+                        <label class="label" for="search-address">Search for city, neighborhood, zip code</label>
+                        <input id="search-address" class="input" type="text" placeholder="Search for city, neighborhood, zip...">
+                        <button class="search-btn fa fa-search" type="submit"></button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <section class="neighborhood">
+            <div class="section-title">
+                <h2 class="title">Top neighborhood</h2>
+                <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+            </div>
+            <div class="neighborhood-listing">
+                <div class="listing-item">
+                    <img class="item-image" src="./img/1.png" alt="House">
+                    <div class="item-size">$1862 / Sq. Ft.</div>
+                    <div class="item-details">
+                        <p class="location">ICON + New York, NY</p>
+                        <p class="name">Carroll Gardens</p>
+                    </div>
+                </div>
+                <div class="listing-item">
+                    <img class="item-image" src="./img//2.png" alt="House">
+                    <div class="item-size">$1862 / Sq. Ft.</div>
+                    <div class="item-details">
+                        <p class="location">ICON + New York, NY</p>
+                        <p class="name">Carroll Gardens</p>
+                    </div>
+                </div>
+                <div class="listing-item last-item">
+                    <img class="item-image" src="./img/3-2.png" alt="House">
+                    <div class="item-size">$1862 / Sq. Ft.</div>
+                    <div class="item-details">
+                        <p class="location">ICON + New York, NY</p>
+                        <p class="name">Carroll Gardens</p>
+                    </div>
+                </div>
+                <a class="btn" href="#">See all</a>
+            </div>
+        </section>
+
+        <section class="recommended">
+            <div class="section-title">
+                <h2 class="title">Recommended for you</h2>
+                <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+            </div>
+            <div class="recommended-listing">
+                <div class="listing-item">
+                    <img class="item-image" src="./img/1.png" alt="House">
+                    <div class="item-details">
+                        <p class="item-price">$123,456</p>
+                        <p class="location-street">121 Gatves g.</p>
+                        <p class="location-city">Miestas, Salis, 12345</p>
+                        <div class="item-features">
+                            <p class="feature"><i class="fa fa-bath" aria-hidden="true"></i>pirmas</p>
+                            <p class="feature"><i class="fa fa-bed" aria-hidden="true"></i>antras</p>
+                            <p class="feature"><i class="fa fa-object-group" aria-hidden="true"></i>trecias</p>
+                        </div>
+                    </div>
+                    <div class="bookmark active">
+                        <div class="fa fa-bookmark-o"></div>
+                        <div class="fa fa-bookmark"></div>
+                    </div>
+                </div>
+                <div class="listing-item">
+                    <img class="item-image" src="./img/1.png" alt="House">
+                    <div class="item-details">
+                        <p class="item-price">$123,456</p>
+                        <p class="location-street">121 Gatves g.</p>
+                        <p class="location-city">Miestas, Salis, 12345</p>
+                        <div class="item-features">
+                            <p class="feature"><i class="fa fa-bath" aria-hidden="true"></i>2 Baths</p>
+                            <p class="feature"><i class="fa fa-bed" aria-hidden="true"></i>2 Baths</p>
+                            <p class="feature"><i class="fa fa-object-group" aria-hidden="true"></i>2 Baths</p>
+                        </div>
+                    </div>
+                    <div class="bookmark">
+                        <div class="fa fa-bookmark-o"></div>
+                        <div class="fa fa-bookmark"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,312 @@
+body,
+body * {
+    margin: 0;
+    padding: 0;
+    vertical-align: top;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
+        sans-serif;
+}
+
+.main-header {
+    display: inline-block;
+    width: 1200px;
+    margin: 20px calc(50% - 600px) 0;
+}
+
+.logo {
+    width: 100px;
+    height: 30px;
+    margin-top: 5px;
+    float: left;
+}
+
+.main-header-right-side {
+    float: right;
+}
+
+.main-menu {
+    float: left;
+    margin-top: 10px;
+    margin-right: 30px;
+}
+
+.menu-link {
+    color: #333;
+    font-size: 20px;
+    line-height: 20px;
+    margin-right: 30px;
+    text-decoration: none;
+}
+
+.menu-link:last-child {
+    margin-right: 0;
+}
+
+.menu-link:hover {
+    color: red;
+    padding-bottom: 5px;
+    border-bottom: 3px solid red;
+}
+
+.user-avatar {
+    width: 40px;
+    height: 40px;
+    float: right;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+main {
+    display: inline-block;
+    width: 1200px;
+    margin: 20px calc(50% - 600px) 40px;
+}
+
+.hero {
+    width: 100%;
+    min-height: 280px;
+    padding: 30px;
+    margin-bottom: 30px;
+    background-color: #36f;
+    background-image: url(../img/bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-content {
+    width: 30%;
+}
+
+.main-title {
+    margin-bottom: 30px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+.form > .filter {
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+    border-radius: 14px;
+    background-color: #fff;
+}
+.form .filter-btn {
+    padding: 8px 35px;
+    background-color: #fff;
+    color: #8080ff;
+    font-size: 18px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+.form .filter-btn:hover {
+    box-shadow: 0 2px 8px #88f8;
+}
+.form .filter-btn.active {
+    background-color: #8080ff;
+    color: #fff;
+}
+.form > .search {
+    display: flex;
+    gap: 15px;
+    width: 100%;
+    padding: 10px;
+    background-color: #fff;
+}
+.form .label {
+    display: none;
+}
+.form .input {
+    width: 0;
+    padding: 15px 0;
+    font-size: 20px;
+    flex-grow: 1;
+    border: none;
+}
+::placeholder {
+    color: red;
+    font-size: 15px;
+    font-style: italic;
+}
+.form .search-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    line-height: 20px;
+    font-size: 18px;
+    text-decoration: none;
+    text-transform: capitalize;
+    background-color: #ff9376;
+    color: #fff;
+    border-radius: 8px;
+    border: 2px solid #ff9376;
+    box-shadow: 0 4px 8px rgba(255, 147, 118, 0.27);
+}
+
+.neighborhood {
+    width: 60%;
+    float: left;
+    margin-right: 30px;
+}
+
+.recommended {
+    width: calc(40% - 30px);
+    float: right;
+}
+
+.section-title {
+    width: 100%;
+    margin-bottom: 20px;
+}
+.section-title > .title {
+}
+.section-title > .description {
+}
+
+.neighborhood-listing {
+    width: 100%;
+}
+.neighborhood-listing > .listing-item {
+    width: calc((100% - 2 * 30px) / 3);
+    margin-right: 30px;
+    float: left;
+    background-color: pink;
+    position: relative;
+    border-radius: 30px;
+    overflow: hidden;
+}
+.neighborhood-listing > .listing-item.last-item {
+    margin-right: 0;
+    margin-bottom: 17px;
+}
+.neighborhood-listing .item-image {
+    width: 100%;
+    height: 250px;
+    object-position: center;
+    object-fit: cover;
+}
+.neighborhood-listing .last-item .item-image {
+    height: 190px;
+}
+.neighborhood-listing .item-size {
+    background-color: #889ef9;
+    color: #fff;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 15px 10px;
+    border-radius: 0 0 0 20px;
+}
+.neighborhood-listing .item-details {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    right: 15px;
+    padding: 10px;
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(3px);
+}
+.neighborhood-listing .location {
+}
+.neighborhood-listing .name {
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    line-height: 20px;
+    font-size: 18px;
+    text-decoration: none;
+    text-transform: capitalize;
+    background-color: #ff9376;
+    color: #fff;
+    border-radius: 8px;
+    border: 2px solid #ff9376;
+    box-shadow: 0 4px 8px rgba(255, 147, 118, 0.27);
+}
+.btn:hover {
+    background-color: #fff;
+    color: #ff9376;
+}
+
+.recommended-listing {
+    width: 100%;
+}
+.recommended-listing > .listing-item {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    position: relative;
+}
+.recommended-listing > .listing-item:last-child {
+    margin-bottom: 0;
+}
+.recommended-listing .item-image {
+    width: 25%;
+    height: 120px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 10px;
+}
+.recommended-listing .item-details {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: calc(75% - 40px);
+}
+.recommended-listing .item-price {
+    font-size: 20px;
+    font-weight: bold;
+}
+.recommended-listing .location-street {
+    font-size: 18px;
+}
+.recommended-listing .location-city {
+    font-size: 16px;
+}
+.recommended-listing .item-features {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px 15px;
+    font-size: 14px;
+}
+.recommended-listing .feature {
+}
+.recommended-listing .feature > .fa {
+    margin-right: 5px;
+}
+.recommended-listing .bookmark {
+    width: 20px;
+    height: 30px;
+    position: absolute;
+    top: -3px;
+    right: 30px;
+    font-size: 30px;
+    color: #889ef9;
+    cursor: pointer;
+}
+.recommended-listing .bookmark > .fa-bookmark,
+.recommended-listing .bookmark:hover > .fa-bookmark-o,
+.recommended-listing .bookmark.active > .fa-bookmark-o,
+.recommended-listing .bookmark.active:hover > .fa-bookmark {
+    display: none;
+}
+.recommended-listing .bookmark:hover > .fa-bookmark,
+.recommended-listing .bookmark.active > .fa-bookmark,
+.recommended-listing .bookmark.active:hover > .fa-bookmark-o {
+    display: block;
+}
